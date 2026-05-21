@@ -1,36 +1,47 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# CredFlow
 
-## Getting Started
+Plataforma de simulação e análise de crédito pessoal.
 
-First, run the development server:
+## Estrutura do Monorepo
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+```
+credflow/
+├── apps/
+│   ├── web/     # Frontend — Next.js 16 + React 19 + TypeScript
+│   └── api/     # Backend — Spring Boot 3 + Java 21 + Maven (em breve)
+├── packages/    # Pacotes compartilhados (em breve)
+├── nx.json      # Configuração do Nx
+└── package.json # Workspace root
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Pré-requisitos
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+- Node.js 20+
+- npm 10+
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Instalação
 
-## Learn More
+```bash
+npm install
+```
 
-To learn more about Next.js, take a look at the following resources:
+## Rodando o projeto
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+```bash
+# Frontend em modo desenvolvimento
+npm run dev
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Build do frontend
+npm run build
 
-## Deploy on Vercel
+# Lint
+npm run lint
+```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Tecnologias
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+| Camada | Tecnologia |
+|---|---|
+| Frontend | Next.js 16, React 19, TypeScript, Tailwind CSS, shadcn/ui |
+| Monorepo | Nx 21, npm workspaces |
+| Backend (em breve) | Spring Boot 3, Java 21, Maven, PostgreSQL |
