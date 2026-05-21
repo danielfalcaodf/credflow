@@ -1,0 +1,33 @@
+{
+  "name": "web",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "projectType": "application",
+  "root": "apps/web",
+  "sourceRoot": "apps/web",
+  "targets": {
+    "dev": {
+      "command": "next dev",
+      "options": {
+        "cwd": "{projectRoot}"
+      }
+    },
+    "build": {
+      "command": "next build",
+      "options": {
+        "cwd": "{projectRoot}"
+      }
+    },
+    "start": {
+      "command": "next start",
+      "options": {
+        "cwd": "{projectRoot}"
+      }
+    },
+    "lint": {
+      "command": "eslint .",
+      "options": {
+        "cwd": "{projectRoot}"
+      }
+    }
+  }
+}

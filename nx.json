@@ -1,0 +1,22 @@
+{
+  "$schema": "./node_modules/nx/schemas/nx-schema.json",
+  "affected": {
+    "defaultBase": "main"
+  },
+  "targetDefaults": {
+    "build": {
+      "cache": true,
+      "outputs": ["{projectRoot}/.next"]
+    },
+    "lint": {
+      "cache": true
+    },
+    "dev": {
+      "cache": false
+    },
+    "start": {
+      "cache": false
+    }
+  },
+  "defaultProject": "web"
+}
