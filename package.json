@@ -1,0 +1,17 @@
+{
+  "name": "credflow",
+  "private": true,
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "scripts": {
+    "dev": "nx run web:dev",
+    "build": "nx run web:build",
+    "lint": "nx run web:lint",
+    "start": "nx run web:start"
+  },
+  "devDependencies": {
+    "nx": "^21.1.2"
+  }
+}
